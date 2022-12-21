@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Game of Life</title>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<h1>Game of life</h1>
+	</header>
+	<section>
+		<p>Enter number of cells which will be random generated</p>
+			<input type = 'text' id = 'numOfCells' class = 'textFields'/> 
+			<input type = 'button' value = 'Go!' onclick = "goRandom()"id = 'my_button'></input>
+		
+		<br><p1>Enter the X and the Y of cells</p1>
+		<br><input type = 'text' id = 'cellX' class = 'textFields'/>
+		<input type = 'text' id = 'cellY' class = 'textFields'/> 
+		<input type = "button" value = "Paint" onclick="userCells()"/>
+		<input type = "button" value = "Go!" onclick="goUserCells()"/>
+	</section>
+	
+	<canvas id="myCanvas" width="500px" height="500px" style="border:2px solid #000000;"></canvas>
+	<script src = 'script.js'></script>
+ 
+</body>
+</html>
